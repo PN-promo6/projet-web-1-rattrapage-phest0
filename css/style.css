@@ -1,0 +1,720 @@
+/* chargement des fonts */
+@font-face {
+  font-family: 'RobotoMono-Thin';
+  src: url("../fonts/RobotoMono-Thin.ttf");
+}
+
+@font-face {
+  font-family: 'RobotoMono-Regular';
+  src: url("../fonts/RobotoMono-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'RobotoMono-Medium';
+  src: url("../fonts/RobotoMono-Medium.ttf");
+}
+
+@font-face {
+  font-family: 'RobotoMono-Bold';
+  src: url("../fonts/RobotoMono-Bold.ttf");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  /* couleur du background et la police par défaut */
+  font-family: 'RobotoMono-Medium';
+  background-color: #F9F4F5;
+}
+
+img {
+  /* indiquer que les images font toutes 100% du parent */
+  max-width: 100%;
+}
+
+a {
+  /* pour modifier couleur des liens de la navbar et enlever le soulignement des liens */
+  color: #F9F4F5;
+  text-decoration: none;
+}
+
+.navbar .container .navbarLeft ul, .navbar .container .navbarRight ul {
+  /* j'enleve les marges à mes listes présentes à droite et à gauche de la navbar */
+  margin: 0px;
+}
+
+.navbar .container {
+  /* pour centrer les éléments de la navbar 'les 2 listes + logo'*/
+  align-items: center;
+}
+
+.container {
+  /* personnalisation du container de ma navbar */
+  width: 1680px;
+  margin: 0 auto;
+  padding: 16px;
+  position: relative;
+}
+
+.container a {
+  display: block
+}
+
+.navLogo {
+  position: absolute;
+  right: 704px;
+  top: 20px;
+}
+
+.displayFlex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container i {
+  font-size: 40px;
+}
+
+.marginNegNav {
+  margin-top: -10px;
+  margin-left: -10px;
+}
+
+/* je met une couleur à la div qui entour le container de la navbar + je fixe la position de la nav*/
+.navbar {
+  background-color: #1A1A1A;
+  z-index: 1;
+  width: 100%;
+  position: fixed;
+}
+
+.navbar .container .navbarLeft ul {
+  /* j'enleve les puces de ma liste de gauche + je les aligne de façon horizontale */
+  display: flex;
+  list-style-type: none;
+}
+
+.navbar .container .navbarRight ul {
+  /* j'enleve les puces de ma liste de droite + je les aligne de façon horizontale  */
+  display: flex;
+  list-style-type: none;
+}
+
+.navbarLeft li {
+  margin-right: 50px;
+}
+
+.navbarLeft li, .navbarRight li {
+  /* je personnalise les listes de ma navbar */
+  padding: 8px 8px 8px 8px;
+  font-size: 25px;
+  letter-spacing: 5px;
+}
+
+.border {
+  border: solid 1px white;
+  margin-right: 10px;
+}
+
+.logoDisplayNone {
+  display: none;
+}
+
+#noMarginLi {
+  /* je cache mon icone menu présent dans la div à gauche */
+  padding: 0px;
+  display: none;
+}
+
+/* ombre de la navbar */
+#shadowNav {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+  background-color: #1A1A1A;
+}
+
+/* je retire le padding des liste de gauche de la navbar */
+.navbarLeft ul {
+  padding: 0px;
+}
+
+/********************************************FIN NAV / DEBUT HEADER*********************************************************/
+.containerHeader {
+  height: 1220px;
+  margin: 0 auto;
+}
+
+.headerBckg {
+  background-image: url(../image/heroHeader.jpg);
+  background-position: right 140px;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+}
+
+.h1Div {
+  border: solid 4px;
+  position: absolute;
+  top: 317px;
+  left: 252px;
+  width: 25%;
+  background-color: #F9F4F5;
+  text-align: center;
+}
+
+.ctaHeader {
+  position: absolute;
+  bottom: 85px;
+  right: 242px;
+  width: 19%;
+  background-color: #040404;
+  text-align: center;
+  font-size: 50PX;
+  box-shadow: 2px 6px 4px rgba(0, 0, 0, 0.25);
+  line-height: 50px;
+  letter-spacing: 6px;
+  font-weight: bold;
+}
+
+#ctaFont {
+  color: #E6902C;
+}
+
+/* animation en hover du call to action from headerHéro */
+.ctaHeader:hover {
+  transition: 1s;
+  background-color: #E6902C;
+}
+
+#ctaFont:hover {
+  transition: 0.6s;
+  color: #1A1A1A;
+}
+
+/* je personnalise le h1 */
+h1 {
+  color: #040404;
+  font-weight: 100;
+  font-size: 2em;
+}
+
+/* *************************************TEXTE PRESENTATION************************************************ */
+/* je personnalie le text de présentation */
+.presentationText {
+  width: 1170px;
+  font-size: 2rem;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+/* je personnalise l'image de separation entre presenation et best seller */
+.deco {
+  display: flex;
+  justify-content: flex-end;
+  margin: 65px;
+}
+
+.deco2 {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+/* *********************************************BEST SELLER************************************************* */
+/* je met en row les divs best seller */
+.container3 {
+  width: 1170px;
+  height: 655px;
+  margin: 0 auto;
+}
+
+.container3 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.container3 .bestDiv p {
+  margin: 0px;
+  padding: 0px;
+  margin-top: 28Px;
+  margin-left: 30px;
+}
+
+.container3 .sellerDiv p {
+  margin-left: 16Px;
+}
+
+.container3 .bsF p {
+  margin-left: 48px;
+  margin-top: 23px;
+}
+
+.container3 .bsH p {
+  margin-left: 48px;
+  margin-top: 23px;
+}
+
+.flexBestSeller {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.leftF {
+  background-image: url(../image/photoF);
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 10PX;
+}
+
+.rightH {
+  background-image: url(../image/photoH);
+  background-repeat: no-repeat;
+  width: 50%;
+  background-size: contain;
+  margin-left: 10px;
+}
+
+/* effet pour le hover de mes images */
+.leftF:hover {
+  transition: filter 0.9s;
+  filter: contrast(5.00);
+}
+
+.rightH:hover {
+  transition: filter 0.9s;
+  filter: contrast(5.00);
+}
+
+.sellerDiv {
+  position: absolute;
+  top: 77px;
+  right: 355px;
+  width: 29%;
+  height: 18%;
+  background-color: #F9F4F5;
+  letter-spacing: 26px;
+  text-align: center;
+  line-height: 34px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 3rem;
+}
+
+#fontSeller {
+  color: #040404;
+  font-size: 62px;
+}
+
+.bestDiv {
+  position: absolute;
+  bottom: 288px;
+  left: 324px;
+  width: 29%;
+  height: 20%;
+  background: #E6902C;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+  letter-spacing: 40Px;
+}
+
+.bsF {
+  position: absolute;
+  width: 25%;
+  height: 12%;
+  left: 141px;
+  bottom: 69px;
+  border: 3px solid #F9F4F5;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 28px;
+  color: #F9F4F5;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  letter-spacing: 0.18em;
+}
+
+.bsH {
+  position: absolute;
+  width: 25%;
+  height: 12%;
+  right: 141px;
+  bottom: 69px;
+  border: 3px solid #F9F4F5;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 28px;
+  color: #F9F4F5;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  letter-spacing: 0.18em;
+}
+
+.marginBottomBS {
+  margin-bottom: 70px;
+}
+
+.cadeaux {
+  margin: 0 auto;
+  width: 1170px;
+  margin-bottom: 75px;
+  font-size: 55px;
+  text-align: center;
+}
+
+#typoH2 {
+  font-weight: 400;
+}
+
+.cadeaux p {
+  margin-top: 0px;
+}
+
+/* *********************************************ARTICLE SHOP *********************************************************** */
+.container4 {
+  width: 1680px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container4 a {
+  color: #040404;
+}
+
+h4 {
+  display: block;
+  margin-block-start: 22px;
+  margin-block-end: 0px;
+  margin-inline-start: 51px;
+  margin-inline-end: 0px;
+}
+
+article {
+  width: 410px;
+  padding-top: 30px;
+}
+
+.flexArticle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.addFavArticle {
+  background: #EEEEEE;
+  border: 1px solid #040404;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 360px;
+  height: 46px;
+  margin-top: 16px;
+  margin-bottom: 20px;
+  font-size: 20Px;
+  letter-spacing: 2px;
+  margin-top: 12PX;
+  padding-top: 0px;
+  display: block;
+  line-height: 0px;
+  font-family: 'RobotoMono-Medium';
+}
+
+.addShopArticle {
+  background: #EFB878;
+  border: 1px solid #040404;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 360px;
+  height: 46px;
+  margin-bottom: 10px;
+  font-size: 20Px;
+  letter-spacing: 2px;
+  margin-top: 12PX;
+  padding-top: 0px;
+  display: block;
+  line-height: 0px;
+  font-family: 'RobotoMono-Medium';
+}
+
+.widthArticle {
+  width: 22%;
+}
+
+.txtAlignCenter {
+  text-align: center;
+}
+
+.marginShop {
+  margin-bottom: 165px;
+}
+
+.hoverArticle:hover {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+  transition: 0.8s;
+}
+
+/* **********************************************BANDEAU PROMO************************************************ */
+.containerPromo {
+  height: 1125px;
+  margin: 0 auto;
+}
+
+.promoBckg {
+  background-image: url(../image/promoBanner.jpg);
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+}
+
+.promo50 {
+  position: absolute;
+  top: 180px;
+  left: 360px;
+  width: 42%;
+  height: 25%;
+  background: rgba(4, 4, 4, 0.97);
+}
+
+.textPromo50 {
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 137px;
+  display: flex;
+  text-align: center;
+  letter-spacing: 4px;
+  color: #F9F4F5;
+}
+
+.ctaPromo {
+  position: absolute;
+  bottom: 117px;
+  right: 319px;
+  width: 36%;
+  height: 20%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #E6902C;
+  animation-name: exemple;
+  animation-duration: 4.2s;
+  animation-iteration-count: infinite;
+}
+
+.textCtaPromo {
+  font-weight: bold;
+  font-size: 95px;
+  line-height: 220px;
+  display: block;
+  text-align: center;
+  letter-spacing: 16px;
+  color: #F9F4F5;
+  animation-name: exemple2;
+  animation-duration: 4.2s;
+  animation-iteration-count: infinite;
+}
+
+#styleH4Promo {
+  display: block;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: -5px;
+  margin-inline-end: 0px;
+}
+
+@keyframes exemple {
+  0% {
+    background-color: #E6902C;
+  }
+
+  25% {
+    background-color: #E6902C;
+  }
+
+  50% {
+    background-color: #1A1A1A;
+  }
+
+  100% {
+    background-color: #F9F4F5;
+  }
+}
+
+@keyframes exemple2 {
+  0% {
+    color: #F9F4F5;
+  }
+
+  25% {
+    color: #F9F4F5;
+  }
+
+  50% {
+    color: #F9F4F5;
+  }
+
+  100% {
+    color: #1A1A1A;
+  }
+}
+
+/* ***************************BANDEAU ADVANTAGE******************************************** */
+.containerAvantages {
+  width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.containerAvantages img {
+  height: 120Px;
+}
+
+.sectionAdv {
+  height: 170px;
+  margin-bottom: 270px;
+  margin-top: 180px;
+}
+
+.flexImgAdv {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0px 70px 0px 70px;
+}
+
+.flexImgAdv p {
+  font-size: 30px;
+  text-align: center;
+}
+
+.h4StyleAdvantage {
+  display: block;
+  margin-block-start: 22px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+/* ************************************** footer ************************** */
+.containerFooter {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #A6A2A3;
+}
+
+.footCol1 {
+  width: 40%;
+  text-align: left;
+  padding: 36px;
+  border-right: solid 3px #1A1A1A;
+  color: #1A1A1A;
+  font-size: 30px;
+}
+
+.footCol2 {
+  text-align: left;
+  padding: 36px;
+  width: 40%;
+  border-right: solid 3PX;
+  font-size: 20px;
+  color: #1A1A1A;
+}
+
+.footCol2 p {
+  font-size: 35px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+input {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 180px;
+  height: 34px;
+}
+
+textarea {
+  margin-top: 5px;
+  resize: none;
+}
+
+.btn {
+  color: #E6902C;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: RobotoMono-Medium;
+  height: 50px;
+  letter-spacing: 3px;
+  max-width: 160px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #1A1A1A;
+}
+
+.btnAlignR {
+  text-align: right;
+  margin-top: 14px;
+}
+
+.footCol3 {
+  text-decoration: none;
+  list-style-type: none;
+  padding-top: 36px;
+  font-size: 28px;
+  text-align: right;
+}
+
+.footCol3 ul {
+  list-style: none;
+}
+
+.footCol3 ul li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.footCol3 ul li a {
+  color: #1A1A1A;
+}
+
+.logoFooter {
+  font-size: 60px;
+  text-align: right;
+}
+
+#textAlignRight {
+  font-size: 40px;
+  text-align: right;
+}
+
+#marginR {
+  margin-left: 20px;
+}
+
+.hoverFooter:hover {
+  color: #F9F4F5;
+}
+
+.anchor {
+  position: fixed;
+  right: 30px;
+  bottom: 0px;
+  font-size: 70px;
+  opacity: 0.90;
+  color: #040404;
+}
